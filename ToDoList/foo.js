@@ -1,15 +1,5 @@
-var myNodelist = document.getElementsByTagName("LI");
-
-for (var i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var foo = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(foo);
-  myNodelist[i].appendChild(span);
-}
-
 if (window.localStorage.length) {
-  for (var i; i <= window.localStorage.length; i++) {
+  for (var i = 1; i <= window.localStorage.length; i++) {
     var lists = document.querySelector ('#lists');
     var liElement = document.createElement ('LI');
     var res = window.localStorage.getItem (i);
@@ -31,7 +21,7 @@ function myFunction (event) {
     alert ("Iltimos to'ldiring");
   } else {
     window.localStorage.setItem (
-      window.localStorage.length ? window.localStorage.lengt+1 : 1,
+      window.localStorage.length ? window.localStorage.length + 1 : 1,
       inputValue
     );
     liElement.appendChild (text);
