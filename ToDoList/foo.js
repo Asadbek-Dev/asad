@@ -1,3 +1,4 @@
+// LocalStorage dan olish
 if (window.localStorage.length) {
   for (var i = 1; i <= window.localStorage.length; i++) {
     var lists = document.querySelector ('#lists');
@@ -9,7 +10,7 @@ if (window.localStorage.length) {
     console.log (res);
   }
 }
-
+// localStorage ga yuklash
 function myFunction (event) {
   event.preventDefault ();
   var lists = document.querySelector ('#lists');
