@@ -1,20 +1,4 @@
-// var liElement = document.getElementsByTagName("LI");
-// for (var i = 0; i < liElement.length; i++) {
-//   var span = document.createElement("SPAN");
-//   var txt = document.createTextNode("\u00D7");
-//   span.className = "close";
-//   span.appendChild(txt);
-//   liElement[i].appendChild(span);
-// }
 
-// var close = document.getElementsByClassName("close");
-// var i;
-// for (i = 0; i < close.length; i++) {
-//   close[i].onclick = function() {
-//     var div = this.parentElement;
-//     div.style.display = "none";
-//   }
-// }
 
 var lists = document.querySelector('ul');
 lists.addEventListener('click', function(ev) {
@@ -56,4 +40,22 @@ function myFunction (event) {
 
   }
   console.log (lists);
+  
 }
+var liElement = document.getElementsByTagName("LI");
+for (var i = 0; i < liElement.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  liElement[i].appendChild(span);
+}
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
